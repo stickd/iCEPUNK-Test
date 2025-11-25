@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "title": "Ice Flow",
@@ -55,3 +56,62 @@
     "audio": "neon_dreams.mp3"
   }
 ]
+=======
+[
+  {
+    "title": "Ice Flow",
+    "description": "DdipDrip",
+    "img": "1.jpg",
+    "genre": "Lo-Fi",
+    "bpm": 75,
+    "key": "Am",
+    "rating": "9/10",
+    "release": "2025-06-01",
+    "audio": "ice_flow.mp3"
+  },
+  {
+    "title": "Neon Trap",
+    "description": "Энергичный трэп с неоновыми вибрациями.",
+    "img": "2.jpg",
+    "genre": "Trap",
+    "bpm": 140,
+    "key": "Cm",
+    "rating": "8/10",
+    "release": "2025-05-20",
+    "audio": "neon_trap.mp3"
+  },
+  {
+    "title": "Chill House",
+    "description": "Теплый хаус бит для вечернего настроения.",
+    "img": "3.jpg",
+    "genre": "House",
+    "bpm": 120,
+    "key": "Fmaj",
+    "rating": "7/10",
+    "release": "2025-04-15",
+    "audio": "chill_house.mp3"
+  },
+  {
+    "title": "Bassline Madness",
+    "description": "Тяжелый басовый бит с мощной динамикой.",
+    "img": "4.jpg",
+    "genre": "EDM",
+    "bpm": 128,
+    "key": "Gm",
+    "rating": "10/10",
+    "release": "2025-06-10",
+    "audio": "bassline_madness.mp3"
+  },
+  {
+    "title": "Neon Dreams",
+    "description": "Энергичный синтвейв с неоновыми вибрациями.",
+    "img": "5.jpg",
+    "genre": "Synthwave",
+    "bpm": 110,
+    "key": "Cm",
+    "rating": "9/10",
+    "release": "2025-07-01",
+    "audio": "neon_dreams.mp3"
+  }
+]
+>>>>>>> d5f45e095cb65c5151f031f3d259c0548bc9932c
