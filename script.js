@@ -1,15 +1,14 @@
 // ======================= СНЕГ =======================
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
+let snowflakes = [];
 
 function resizeCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 }
-resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
-
-let snowflakes = [];
+resizeCanvas();
 
 class Snowflake {
   constructor() {
@@ -36,8 +35,7 @@ class Snowflake {
 }
 
 function initSnow() {
-  snowflakes = [];
-  for (let i = 0; i < 200; i++) snowflakes.push(new Snowflake());
+  snowflakes = Array.from({ length: 250 }, () => new Snowflake());
 }
 function animateSnow() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -47,6 +45,7 @@ function animateSnow() {
   });
   requestAnimationFrame(animateSnow);
 }
+
 initSnow();
 animateSnow();
 
@@ -65,12 +64,16 @@ function displayGames(data) {
   const container = document.getElementById("games-container");
   container.innerHTML = "";
 
-  data.forEach((game) => {
+  data.forEach((game, index) => {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `<img src="${game.img}" alt="${game.title}"><span>${game.title}</span>`;
-    card.addEventListener("click", () => showModal(game));
     container.appendChild(card);
+
+    // Плавное появление карточек
+    setTimeout(() => card.classList.add("show"), index * 100);
+
+    card.addEventListener("click", () => showModal(game));
   });
 }
 
